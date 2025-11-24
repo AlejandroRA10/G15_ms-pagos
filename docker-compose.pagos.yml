@@ -5,7 +5,7 @@ services:
     image: ms-pagos:v1.1
     container_name: pagos_service
     environment:
-      - FLASK_ENV=${FLASK_ENV}
+      - FLASK_ENV=${FLASK_ENV}      
       #PostgreSQL
       - POSTGRES_USER=${POSTGRES_USER}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}

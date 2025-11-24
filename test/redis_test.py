@@ -20,6 +20,7 @@ class RedisTestCase(unittest.TestCase):
         db.session.remove()
         db.drop_all()
         self.app_context.pop()
+    # test connection to Redis
     def test_redis_connection(self):
         redis = Redis(
             host=self.app.config['CACHE_REDIS_HOST'],

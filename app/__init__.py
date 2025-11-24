@@ -62,6 +62,7 @@ def create_app():
     except Exception as e:
         raise RuntimeError(f"Error al registrar blueprints: {e}")
 
+    # Ruta de prueba
     @app.route('/ping', methods=['GET'])
     def ping():
         return {"message": "El servicio de pagos está en funcionamiento"}
